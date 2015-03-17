@@ -1,0 +1,507 @@
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 2 1'
+++ delete_thin 1 0
+++ [[ 0 -gt 0 ]]
+++ umount mount/1
+umount: mount/1: not found
+++ dmsetup remove 1
+device-mapper: remove ioctl on 1 failed: No such device or address
+Command failed
+++ dmsetup message /dev/mapper/testPool 01 'delete 1'
+device-mapper: message ioctl on testPool failed: Device or resource busy
+Command failed
+++ dmsetup create 2 --table '0 8388608 thin /dev/mapper/testPool 2'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 3 2'
+++ delete_thin 2 2433
+++ [[ 2433 -gt 0 ]]
+++ kill -9 2433
+./8_delete_while_snap_it.sh: line 5: kill: (2433) - No such process
+++ umount mount/2
+++ dmsetup create 3 --table '0 8388608 thin /dev/mapper/testPool 3'
+++ dmsetup remove 2
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 2'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 4 3'
+++ delete_thin 3 2451
+++ [[ 2451 -gt 0 ]]
+++ kill -9 2451
+./8_delete_while_snap_it.sh: line 5: kill: (2451) - No such process
+++ umount mount/3
+++ dmsetup create 4 --table '0 8388608 thin /dev/mapper/testPool 4'
+++ set +x
+++ dmsetup remove 3
+++ dmsetup message /dev/mapper/testPool 01 'delete 3'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 5 4'
+++ delete_thin 4 2471
+++ [[ 2471 -gt 0 ]]
+++ kill -9 2471
+./8_delete_while_snap_it.sh: line 5: kill: (2471) - No such process
+++ umount mount/4
+++ dmsetup create 5 --table '0 8388608 thin /dev/mapper/testPool 5'
+++ dmsetup remove 4
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 4'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 6 5'
+++ delete_thin 5 2494
+++ [[ 2494 -gt 0 ]]
+++ kill -9 2494
+./8_delete_while_snap_it.sh: line 5: kill: (2494) - No such process
+++ umount mount/5
+++ dmsetup create 6 --table '0 8388608 thin /dev/mapper/testPool 6'
+++ set +x
+++ dmsetup remove 5
+++ dmsetup message /dev/mapper/testPool 01 'delete 5'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 7 6'
+++ delete_thin 6 2510
+++ [[ 2510 -gt 0 ]]
+++ kill -9 2510
+./8_delete_while_snap_it.sh: line 5: kill: (2510) - No such process
+++ umount mount/6
+++ dmsetup create 7 --table '0 8388608 thin /dev/mapper/testPool 7'
+++ set +x
+++ dmsetup remove 6
+++ dmsetup message /dev/mapper/testPool 01 'delete 6'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 8 7'
+++ delete_thin 7 2532
+++ [[ 2532 -gt 0 ]]
+++ kill -9 2532
+./8_delete_while_snap_it.sh: line 5: kill: (2532) - No such process
+++ umount mount/7
+++ dmsetup create 8 --table '0 8388608 thin /dev/mapper/testPool 8'
+++ set +x
+++ dmsetup remove 7
+++ dmsetup message /dev/mapper/testPool 01 'delete 7'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 9 8'
+++ delete_thin 8 2549
+++ [[ 2549 -gt 0 ]]
+++ kill -9 2549
+./8_delete_while_snap_it.sh: line 5: kill: (2549) - No such process
+++ umount mount/8
+++ dmsetup create 9 --table '0 8388608 thin /dev/mapper/testPool 9'
+++ set +x
+++ dmsetup remove 8
+++ dmsetup message /dev/mapper/testPool 01 'delete 8'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 10 9'
+++ delete_thin 9 2570
+++ [[ 2570 -gt 0 ]]
+++ kill -9 2570
+./8_delete_while_snap_it.sh: line 5: kill: (2570) - No such process
+++ umount mount/9
+++ dmsetup create 10 --table '0 8388608 thin /dev/mapper/testPool 10'
+++ set +x
+++ dmsetup remove 9
+++ dmsetup message /dev/mapper/testPool 01 'delete 9'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 11 10'
+++ delete_thin 10 2590
+++ [[ 2590 -gt 0 ]]
+++ kill -9 2590
+./8_delete_while_snap_it.sh: line 5: kill: (2590) - No such process
+++ umount mount/10
+++ dmsetup create 11 --table '0 8388608 thin /dev/mapper/testPool 11'
+++ set +x
+++ dmsetup remove 10
+++ dmsetup message /dev/mapper/testPool 01 'delete 10'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 12 11'
+++ delete_thin 11 2606
+++ [[ 2606 -gt 0 ]]
+++ kill -9 2606
+./8_delete_while_snap_it.sh: line 5: kill: (2606) - No such process
+++ umount mount/11
+++ dmsetup create 12 --table '0 8388608 thin /dev/mapper/testPool 12'
+++ set +x
+++ dmsetup remove 11
+++ dmsetup message /dev/mapper/testPool 01 'delete 11'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 13 12'
+++ delete_thin 12 2627
+++ [[ 2627 -gt 0 ]]
+++ kill -9 2627
+./8_delete_while_snap_it.sh: line 5: kill: (2627) - No such process
+++ umount mount/12
+++ dmsetup create 13 --table '0 8388608 thin /dev/mapper/testPool 13'
+++ dmsetup remove 12
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 12'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 14 13'
+++ delete_thin 13 2651
+++ [[ 2651 -gt 0 ]]
+++ kill -9 2651
+./8_delete_while_snap_it.sh: line 5: kill: (2651) - No such process
+++ umount mount/13
+++ dmsetup create 14 --table '0 8388608 thin /dev/mapper/testPool 14'
+++ set +x
+++ dmsetup remove 13
+++ dmsetup message /dev/mapper/testPool 01 'delete 13'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 15 14'
+++ delete_thin 14 2672
+++ [[ 2672 -gt 0 ]]
+++ kill -9 2672
+./8_delete_while_snap_it.sh: line 5: kill: (2672) - No such process
+++ umount mount/14
+++ dmsetup create 15 --table '0 8388608 thin /dev/mapper/testPool 15'
+++ set +x
+++ dmsetup remove 14
+++ dmsetup message /dev/mapper/testPool 01 'delete 14'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 16 15'
+++ delete_thin 15 2694
+++ [[ 2694 -gt 0 ]]
+++ kill -9 2694
+./8_delete_while_snap_it.sh: line 5: kill: (2694) - No such process
+++ umount mount/15
+++ dmsetup create 16 --table '0 8388608 thin /dev/mapper/testPool 16'
+++ set +x
+++ dmsetup remove 15
+++ dmsetup message /dev/mapper/testPool 01 'delete 15'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 17 16'
+++ delete_thin 16 2717
+++ [[ 2717 -gt 0 ]]
+++ kill -9 2717
+./8_delete_while_snap_it.sh: line 5: kill: (2717) - No such process
+++ umount mount/16
+++ dmsetup create 17 --table '0 8388608 thin /dev/mapper/testPool 17'
+++ set +x
+++ dmsetup remove 16
+++ dmsetup message /dev/mapper/testPool 01 'delete 16'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 18 17'
+++ delete_thin 17 2737
+++ [[ 2737 -gt 0 ]]
+++ kill -9 2737
+./8_delete_while_snap_it.sh: line 5: kill: (2737) - No such process
+++ umount mount/17
+++ dmsetup create 18 --table '0 8388608 thin /dev/mapper/testPool 18'
+++ set +x
+++ dmsetup remove 17
+++ dmsetup message /dev/mapper/testPool 01 'delete 17'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 19 18'
+++ delete_thin 18 2758
+++ [[ 2758 -gt 0 ]]
+++ kill -9 2758
+./8_delete_while_snap_it.sh: line 5: kill: (2758) - No such process
+++ umount mount/18
+++ dmsetup create 19 --table '0 8388608 thin /dev/mapper/testPool 19'
+++ set +x
+++ dmsetup remove 18
+++ dmsetup message /dev/mapper/testPool 01 'delete 18'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 20 19'
+++ delete_thin 19 2775
+++ [[ 2775 -gt 0 ]]
+++ kill -9 2775
+./8_delete_while_snap_it.sh: line 5: kill: (2775) - No such process
+++ umount mount/19
+++ dmsetup create 20 --table '0 8388608 thin /dev/mapper/testPool 20'
+++ set +x
+++ dmsetup remove 19
+++ dmsetup message /dev/mapper/testPool 01 'delete 19'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 21 20'
+++ delete_thin 20 2795
+++ [[ 2795 -gt 0 ]]
+++ kill -9 2795
+./8_delete_while_snap_it.sh: line 5: kill: (2795) - No such process
+++ umount mount/20
+++ dmsetup create 21 --table '0 8388608 thin /dev/mapper/testPool 21'
+++ set +x
+++ dmsetup remove 20
+++ dmsetup message /dev/mapper/testPool 01 'delete 20'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 22 21'
+++ delete_thin 21 2815
+++ [[ 2815 -gt 0 ]]
+++ kill -9 2815
+./8_delete_while_snap_it.sh: line 5: kill: (2815) - No such process
+++ umount mount/21
+++ dmsetup create 22 --table '0 8388608 thin /dev/mapper/testPool 22'
+++ set +x
+++ dmsetup remove 21
+++ dmsetup message /dev/mapper/testPool 01 'delete 21'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 23 22'
+++ delete_thin 22 2838
+++ [[ 2838 -gt 0 ]]
+++ kill -9 2838
+./8_delete_while_snap_it.sh: line 5: kill: (2838) - No such process
+++ umount mount/22
+++ dmsetup create 23 --table '0 8388608 thin /dev/mapper/testPool 23'
+++ set +x
+++ dmsetup remove 22
+++ dmsetup message /dev/mapper/testPool 01 'delete 22'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 24 23'
+++ delete_thin 23 2859
+++ [[ 2859 -gt 0 ]]
+++ kill -9 2859
+./8_delete_while_snap_it.sh: line 5: kill: (2859) - No such process
+++ umount mount/23
+++ dmsetup create 24 --table '0 8388608 thin /dev/mapper/testPool 24'
+++ set +x
+++ dmsetup remove 23
+++ dmsetup message /dev/mapper/testPool 01 'delete 23'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 25 24'
+++ delete_thin 24 2879
+++ [[ 2879 -gt 0 ]]
+++ kill -9 2879
+./8_delete_while_snap_it.sh: line 5: kill: (2879) - No such process
+++ umount mount/24
+umount: /var/lib/docker/devicemapper_test/mount/24: not mounted
+++ dmsetup remove 24
+++ dmsetup create 25 --table '0 8388608 thin /dev/mapper/testPool 25'
+device-mapper: remove ioctl on 24 failed: Device or resource busy
+Command failed
+++ dmsetup message /dev/mapper/testPool 01 'delete 24'
+device-mapper: message ioctl on testPool failed: Device or resource busy
+Command failed
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 26 25'
+++ delete_thin 25 2968
+++ [[ 2968 -gt 0 ]]
+++ kill -9 2968
+./8_delete_while_snap_it.sh: line 5: kill: (2968) - No such process
+++ umount mount/25
+++ dmsetup create 26 --table '0 8388608 thin /dev/mapper/testPool 26'
+++ set +x
+++ dmsetup remove 25
+++ dmsetup message /dev/mapper/testPool 01 'delete 25'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 27 26'
+++ delete_thin 26 3012
+++ [[ 3012 -gt 0 ]]
+++ kill -9 3012
+./8_delete_while_snap_it.sh: line 5: kill: (3012) - No such process
+++ umount mount/26
+++ dmsetup create 27 --table '0 8388608 thin /dev/mapper/testPool 27'
+++ set +x
+++ dmsetup remove 26
+++ dmsetup message /dev/mapper/testPool 01 'delete 26'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 28 27'
+++ delete_thin 27 3033
+++ [[ 3033 -gt 0 ]]
+++ kill -9 3033
+./8_delete_while_snap_it.sh: line 5: kill: (3033) - No such process
+++ umount mount/27
+++ dmsetup create 28 --table '0 8388608 thin /dev/mapper/testPool 28'
+++ set +x
+++ dmsetup remove 27
+++ dmsetup message /dev/mapper/testPool 01 'delete 27'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 29 28'
+++ delete_thin 28 3050
+++ [[ 3050 -gt 0 ]]
+++ kill -9 3050
+./8_delete_while_snap_it.sh: line 5: kill: (3050) - No such process
+++ umount mount/28
+++ dmsetup create 29 --table '0 8388608 thin /dev/mapper/testPool 29'
+++ dmsetup remove 28
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 28'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 30 29'
+++ delete_thin 29 3071
+++ [[ 3071 -gt 0 ]]
+++ kill -9 3071
+./8_delete_while_snap_it.sh: line 5: kill: (3071) - No such process
+++ umount mount/29
+++ dmsetup create 30 --table '0 8388608 thin /dev/mapper/testPool 30'
+++ set +x
+++ dmsetup remove 29
+++ dmsetup message /dev/mapper/testPool 01 'delete 29'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 31 30'
+++ delete_thin 30 3090
+++ [[ 3090 -gt 0 ]]
+++ kill -9 3090
+./8_delete_while_snap_it.sh: line 5: kill: (3090) - No such process
+++ umount mount/30
+++ dmsetup create 31 --table '0 8388608 thin /dev/mapper/testPool 31'
+++ dmsetup remove 30
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 30'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 32 31'
+++ delete_thin 31 3110
+++ [[ 3110 -gt 0 ]]
+++ kill -9 3110
+./8_delete_while_snap_it.sh: line 5: kill: (3110) - No such process
+++ umount mount/31
+++ dmsetup create 32 --table '0 8388608 thin /dev/mapper/testPool 32'
+++ set +x
+++ dmsetup remove 31
+++ dmsetup message /dev/mapper/testPool 01 'delete 31'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 33 32'
+++ delete_thin 32 3129
+++ [[ 3129 -gt 0 ]]
+++ kill -9 3129
+./8_delete_while_snap_it.sh: line 5: kill: (3129) - No such process
+++ umount mount/32
+++ dmsetup create 33 --table '0 8388608 thin /dev/mapper/testPool 33'
+++ set +x
+++ dmsetup remove 32
+++ dmsetup message /dev/mapper/testPool 01 'delete 32'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 34 33'
+++ delete_thin 33 3149
+++ [[ 3149 -gt 0 ]]
+++ kill -9 3149
+./8_delete_while_snap_it.sh: line 5: kill: (3149) - No such process
+++ umount mount/33
+++ dmsetup create 34 --table '0 8388608 thin /dev/mapper/testPool 34'
+++ dmsetup remove 33
+++ dmsetup message /dev/mapper/testPool 01 'delete 33'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 35 34'
+++ delete_thin 34 3170
+++ [[ 3170 -gt 0 ]]
+++ kill -9 3170
+./8_delete_while_snap_it.sh: line 5: kill: (3170) - No such process
+++ umount mount/34
+++ dmsetup create 35 --table '0 8388608 thin /dev/mapper/testPool 35'
+++ set +x
+++ dmsetup remove 34
+++ dmsetup message /dev/mapper/testPool 01 'delete 34'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 36 35'
+++ delete_thin 35 3187
+++ [[ 3187 -gt 0 ]]
+++ kill -9 3187
+./8_delete_while_snap_it.sh: line 5: kill: (3187) - No such process
+++ umount mount/35
+++ dmsetup create 36 --table '0 8388608 thin /dev/mapper/testPool 36'
+++ set +x
+++ dmsetup remove 35
+++ dmsetup message /dev/mapper/testPool 01 'delete 35'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 37 36'
+++ delete_thin 36 3208
+++ [[ 3208 -gt 0 ]]
+++ kill -9 3208
+./8_delete_while_snap_it.sh: line 5: kill: (3208) - No such process
+++ umount mount/36
+++ dmsetup create 37 --table '0 8388608 thin /dev/mapper/testPool 37'
+++ set +x
+++ dmsetup remove 36
+++ dmsetup message /dev/mapper/testPool 01 'delete 36'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 38 37'
+++ delete_thin 37 3227
+++ [[ 3227 -gt 0 ]]
+++ kill -9 3227
+./8_delete_while_snap_it.sh: line 5: kill: (3227) - No such process
+++ umount mount/37
+++ dmsetup create 38 --table '0 8388608 thin /dev/mapper/testPool 38'
+++ dmsetup remove 37
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 37'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 39 38'
+++ delete_thin 38 3246
+++ [[ 3246 -gt 0 ]]
+++ kill -9 3246
+./8_delete_while_snap_it.sh: line 5: kill: (3246) - No such process
+++ umount mount/38
+++ dmsetup create 39 --table '0 8388608 thin /dev/mapper/testPool 39'
+++ set +x
+++ dmsetup remove 38
+++ dmsetup message /dev/mapper/testPool 01 'delete 38'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 40 39'
+++ delete_thin 39 3264
+++ [[ 3264 -gt 0 ]]
+++ kill -9 3264
+./8_delete_while_snap_it.sh: line 5: kill: (3264) - No such process
+++ umount mount/39
+++ dmsetup create 40 --table '0 8388608 thin /dev/mapper/testPool 40'
+++ set +x
+++ dmsetup remove 39
+++ dmsetup message /dev/mapper/testPool 01 'delete 39'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 41 40'
+++ delete_thin 40 3284
+++ [[ 3284 -gt 0 ]]
+++ kill -9 3284
+./8_delete_while_snap_it.sh: line 5: kill: (3284) - No such process
+++ umount mount/40
+++ dmsetup create 41 --table '0 8388608 thin /dev/mapper/testPool 41'
+++ set +x
+++ dmsetup remove 40
+++ dmsetup message /dev/mapper/testPool 01 'delete 40'
+++ delete_thin 41 3305
+++ [[ 3305 -gt 0 ]]
+++ kill -9 3305
+./8_delete_while_snap_it.sh: line 5: kill: (3305) - No such process
+++ umount mount/41
+++ dmsetup create 42 --table '0 8388608 thin /dev/mapper/testPool 42'
+++ dmsetup remove 41
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 41'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 43 42'
+++ delete_thin 42 3325
+++ [[ 3325 -gt 0 ]]
+++ kill -9 3325
+./8_delete_while_snap_it.sh: line 5: kill: (3325) - No such process
+++ umount mount/42
+++ dmsetup create 43 --table '0 8388608 thin /dev/mapper/testPool 43'
+++ set +x
+++ dmsetup remove 42
+++ dmsetup message /dev/mapper/testPool 01 'delete 42'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 44 43'
+++ delete_thin 43 3342
+++ [[ 3342 -gt 0 ]]
+++ kill -9 3342
+./8_delete_while_snap_it.sh: line 5: kill: (3342) - No such process
+++ umount mount/43
+++ dmsetup create 44 --table '0 8388608 thin /dev/mapper/testPool 44'
+++ set +x
+++ dmsetup remove 43
+++ dmsetup message /dev/mapper/testPool 01 'delete 43'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 45 44'
+++ delete_thin 44 3362
+++ [[ 3362 -gt 0 ]]
+++ kill -9 3362
+./8_delete_while_snap_it.sh: line 5: kill: (3362) - No such process
+++ umount mount/44
+++ dmsetup create 45 --table '0 8388608 thin /dev/mapper/testPool 45'
+++ set +x
+++ dmsetup remove 44
+++ dmsetup message /dev/mapper/testPool 01 'delete 44'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 46 45'
+++ delete_thin 45 3380
+++ [[ 3380 -gt 0 ]]
+++ kill -9 3380
+./8_delete_while_snap_it.sh: line 5: kill: (3380) - No such process
+++ umount mount/45
+++ dmsetup create 46 --table '0 8388608 thin /dev/mapper/testPool 46'
+++ set +x
+++ dmsetup remove 45
+++ dmsetup message /dev/mapper/testPool 01 'delete 45'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 47 46'
+++ delete_thin 46 3401
+++ [[ 3401 -gt 0 ]]
+++ kill -9 3401
+./8_delete_while_snap_it.sh: line 5: kill: (3401) - No such process
+++ umount mount/46
+++ dmsetup create 47 --table '0 8388608 thin /dev/mapper/testPool 47'
+++ set +x
+++ dmsetup remove 46
+++ dmsetup message /dev/mapper/testPool 01 'delete 46'
+++ delete_thin 47 3422
+++ [[ 3422 -gt 0 ]]
+++ kill -9 3422
+./8_delete_while_snap_it.sh: line 5: kill: (3422) - No such process
+++ umount mount/47
+++ dmsetup create 48 --table '0 8388608 thin /dev/mapper/testPool 48'
+++ set +x
+++ dmsetup remove 47
+++ dmsetup message /dev/mapper/testPool 01 'delete 47'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 49 48'
+++ delete_thin 48 3442
+++ [[ 3442 -gt 0 ]]
+++ kill -9 3442
+./8_delete_while_snap_it.sh: line 5: kill: (3442) - No such process
+++ umount mount/48
+++ dmsetup create 49 --table '0 8388608 thin /dev/mapper/testPool 49'
+++ dmsetup remove 48
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'delete 48'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 50 49'
+++ delete_thin 49 3462
+++ [[ 3462 -gt 0 ]]
+++ kill -9 3462
+./8_delete_while_snap_it.sh: line 5: kill: (3462) - No such process
+++ umount mount/49
+++ dmsetup create 50 --table '0 8388608 thin /dev/mapper/testPool 50'
+++ set +x
+++ dmsetup remove 49
+++ dmsetup message /dev/mapper/testPool 01 'delete 49'
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 51 50'
+++ delete_thin 50 3481
+++ [[ 3481 -gt 0 ]]
+++ kill -9 3481
+./8_delete_while_snap_it.sh: line 5: kill: (3481) - No such process
+++ umount mount/50
+++ dmsetup create 51 --table '0 8388608 thin /dev/mapper/testPool 51'
+++ set +x
+++ dmsetup remove 50
+++ dmsetup message /dev/mapper/testPool 01 'delete 50'
+rm: cannot remove `thin1/*.dat': No such file or directory

@@ -1,0 +1,80 @@
+##### Start snapshot thin1 any key continue...
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 2 01'
+device-mapper: message ioctl on testPool failed: File exists
+Command failed
+++ dmsetup create 2 --table '0 8388608 thin /dev/mapper/testPool 2'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 3 01'
+++ dmsetup create 3 --table '0 8388608 thin /dev/mapper/testPool 3'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 4 01'
+++ dmsetup create 4 --table '0 8388608 thin /dev/mapper/testPool 4'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 5 01'
+++ dmsetup create 5 --table '0 8388608 thin /dev/mapper/testPool 5'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 6 01'
+++ dmsetup create 6 --table '0 8388608 thin /dev/mapper/testPool 6'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 7 01'
+++ dmsetup create 7 --table '0 8388608 thin /dev/mapper/testPool 7'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 8 01'
+++ dmsetup create 8 --table '0 8388608 thin /dev/mapper/testPool 8'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 9 01'
+++ dmsetup create 9 --table '0 8388608 thin /dev/mapper/testPool 9'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 10 01'
+++ dmsetup create 10 --table '0 8388608 thin /dev/mapper/testPool 10'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 11 01'
+++ dmsetup create 11 --table '0 8388608 thin /dev/mapper/testPool 11'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 12 01'
+++ dmsetup create 12 --table '0 8388608 thin /dev/mapper/testPool 12'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 13 01'
+++ dmsetup create 13 --table '0 8388608 thin /dev/mapper/testPool 13'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 14 01'
+++ dmsetup create 14 --table '0 8388608 thin /dev/mapper/testPool 14'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 15 01'
+++ dmsetup create 15 --table '0 8388608 thin /dev/mapper/testPool 15'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 16 01'
+++ dmsetup create 16 --table '0 8388608 thin /dev/mapper/testPool 16'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 17 01'
+++ dmsetup create 17 --table '0 8388608 thin /dev/mapper/testPool 17'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 18 01'
+++ dmsetup create 18 --table '0 8388608 thin /dev/mapper/testPool 18'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 19 01'
+++ dmsetup create 19 --table '0 8388608 thin /dev/mapper/testPool 19'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 20 01'
+++ dmsetup create 20 --table '0 8388608 thin /dev/mapper/testPool 20'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 21 01'
+++ dmsetup create 21 --table '0 8388608 thin /dev/mapper/testPool 21'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 22 01'
+++ dmsetup create 22 --table '0 8388608 thin /dev/mapper/testPool 22'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 23 01'
+++ dmsetup create 23 --table '0 8388608 thin /dev/mapper/testPool 23'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 24 01'
+++ dmsetup create 24 --table '0 8388608 thin /dev/mapper/testPool 24'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 25 01'
+++ dmsetup create 25 --table '0 8388608 thin /dev/mapper/testPool 25'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 26 01'
+++ dmsetup create 26 --table '0 8388608 thin /dev/mapper/testPool 26'
+++ set +x
+++ dmsetup message /dev/mapper/testPool 01 'create_snap 27 01'
+++ dmsetup create 27 --table '0 8388608 thin /dev/mapper/testPool 27'

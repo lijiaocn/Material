@@ -1,0 +1,5 @@
+1. 在thin volume没有suspend、且正在写入的情况下，仅创建snap   [OK]
+2. 在thin volume正在被删除的情况下，创建snap    [OK]
+    thin volume有一个唯一的id和一个可以修改的设备名, dmsetup remove thin1之后，thin1设备被删除了，但是还是可以根据thin1设备的Id创建snapshot
+
+
