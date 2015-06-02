@@ -1,0 +1,30 @@
+[Unit]
+Description=Docker Application Container Engine
+Documentation=http://docs.docker.com
+After=jd-flannel.service
+Requires=jd-flannel.service
+
+[Service]
+Type=notify
+EnvironmentFile=-/run/flannel/subnet.env
+EnvironmentFile=-/export/jd-kuber8s/etc/docker.conf
+EnvironmentFile=-/export/jd-kuber8s/etc/docker-storage.conf
+EnvironmentFile=-/export/jd-kuber8s/etc/docker-network.conf
+Environment=GOTRACEBACK=crash
+ExecStart=/usr/bin/docker -d -D -s vfs $OPTIONS \
+          $DOCKER_STORAGE_OPTIONS \
+          $DOCKER_NETWORK_OPTIONS \
+          $FLANNEL_DOCKER_NETWORK_OPTIONS \
+          $ADD_REGISTRY \
+          $BLOCK_REGISTRY \
+          $INSECURE_REGISTRY \
+
+LimitNOFILE=1048576
+LimitNPROC=1048576
+LimitCORE=infinity
+MountFlags=slave
+          
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

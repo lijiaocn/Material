@@ -1,0 +1,17 @@
+[Unit]
+Description=Flannel
+Documentation=http://github.com/coreos/flannel
+After=network.target
+
+[Service]
+Type=notify
+EnvironmentFile=-/export/jd-kuber8s/etc/flannel.conf
+ExecStart=/export/jd-kuber8s/bin/jd-flannel $ETCD_OPTIONS  $INFACE_OPTIONS  
+          
+LimitNOFILE=1048576
+LimitNPROC=1048576
+LimitCORE=infinity
+MountFlags=slave
+
+[Install]
+WantedBy=multi-user.target
