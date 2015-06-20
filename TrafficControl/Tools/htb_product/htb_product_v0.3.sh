@@ -14,6 +14,14 @@ func_fatal(){
 	exit
 }
 
+#Input is a string.
+#The string  will be displayed with red color
+func_red_str(){
+	echo  -n -e "\e[31m"
+	echo  -e "$*"
+	echo  -n -e "\e[0m"
+}
+
 #Input is the command.
 #The command's execute output will use red color
 func_red_cmd(){
