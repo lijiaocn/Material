@@ -5,7 +5,7 @@ title: Readme
 ---
 
 # Readme
-创建时间: 2015/07/06 11:42:25  修改时间: 2015/07/09 16:29:31 作者:lijiao
+创建时间: 2015/07/06 11:42:25  修改时间: 2015/07/09 16:38:09 作者:lijiao
 
 ----
 
@@ -48,7 +48,7 @@ title: Readme
 	cd /export/Shell/keepalived;
 	./redis.sh start
 
-检查alive,sh执行的退出值是否为0：
+检查alive.sh执行的退出值是否为0：
 
 	./alive.sh
 	echo $?      //如果不为0，需要排查原因，直到返回值为0为止。
