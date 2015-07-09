@@ -1,5 +1,6 @@
 #!/bin/bash
 . /export/Shell/keepalived/config.sh
 
-ret=`func_alive`
+func_alive
+ret=$?
 exit $ret

@@ -1,3 +1,7 @@
 #!/bin/bash
+. /export/Shell/keepalived/config.sh
 
-echo "Fault">/export/Logs/keepalived/fault
+date=`date`
+echo "$date: My service is fault">>/export/Logs/keepalived/log
+
+func_sms "Fault" "Redis service dead"
