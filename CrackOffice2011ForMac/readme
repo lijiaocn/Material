@@ -1,0 +1,4 @@
+用brew安装office 2011 for mac
+cp ./com.microsoft.office.licensing.plist  /Library/Preferences/
+打开office,这时候可以进行编辑了。
+
