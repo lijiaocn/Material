@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JSON编辑器</title>
+		<link href="https://cdn.bootcss.com/jsoneditor/5.13.1/jsoneditor.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="flex">
+			<div style="width: 40%;">
+				<p class="title-text">code</p>
+				<div id="codeEditor" style="width: 100%; height: 600px;"></div>
+				<div class="code-btn-box">
+					<button id="compact" class="compact-btn" type="button">压缩</button>
+					<button id="format" class="format-btn" type="button">格式化</button>
+					<button id="save" class="save-btn" type="button">保存</button>
+				</div>
+			</div>
+
+			<ul class="btn-box">
+				<li>
+					<button id="jsonBtn" class="json-btn" type="button">视图化 >></button>
+				</li>
+				<li>
+					<button id="codeBtn" type="button"><< 代码化</button>
+				</li>
+			</ul>
+
+			<div style="width: 40%;">
+				<p class="title-text">JSON</p>
+				<div id="jsonEditor" style="width: 100%; height: 600px;"></div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jsoneditor/5.13.1/jsoneditor.min.js"></script>
+	<script src="https://cdn.bootcss.com/ace/1.2.9/ace.js"></script>
+	<script src="https://cdn.bootcss.com/jsonlint/1.6.0/jsonlint.min.js"></script>
+	<script src="js/index.js"></script>
+</html>

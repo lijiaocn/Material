@@ -1,0 +1,58 @@
+{
+  "name": "mergely",
+  "version": "4.0.7",
+  "description": "A javascript UI for diff/merge",
+  "directories": {
+    "doc": "doc",
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "rm -rf lib && webpack",
+    "test": "karma start",
+    "test:chrome": "karma start --browsers Chrome --singleRun=false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wickedest/Mergely.git"
+  },
+  "main": "lib/mergely.js",
+  "files": [
+    "lib",
+    "examples",
+    "README.md"
+  ],
+  "keywords": [
+    "merge",
+    "diff",
+    "myers"
+  ],
+  "author": {
+    "name": "Jamie Peabody",
+    "email": "jamie.peabody@gmail.com",
+    "url": "http://mergely.com"
+  },
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1 OR SEE LICENSE IN LICENSE)",
+  "bugs": {
+    "url": "https://github.com/wickedest/Mergely/issues"
+  },
+  "homepage": "https://github.com/wickedest/Mergely#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codemirror": "^5.32.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "image-webpack-loader": "^3.4.2",
+    "jquery": "^3.2.1",
+    "karma": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage-istanbul-reporter": "^1.3.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^2.0.9",
+    "mocha": "^4.0.1",
+    "webpack": "^3.8.1"
+  }
+}
