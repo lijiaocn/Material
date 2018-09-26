@@ -1,7 +1,2 @@
-license_server.txt
-
-:Author: lijiaocn
-:Email: lijiaocn@foxmail.com
-:Date: 2018-07-25 14:21
-
 http://active.chinapyg.com/      from: https://blog.csdn.net/jilky123/article/details/80522125
+http://140.143.132.75:1027
